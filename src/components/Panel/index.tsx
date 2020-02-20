@@ -12,7 +12,9 @@ type PanelProps = {
 export default function Panel({ name, tickets }: PanelProps) {
   return (
     <div>
-      <div>{name}</div>
+      <div>
+        {name} <b>{tickets?.length}</b>
+      </div>
       {tickets?.map(ticket => (
         <Ticket title={ticket} key={ticket} />
       ))}

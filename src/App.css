@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
+.container {
   background-color: #eee;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   color: #333;
