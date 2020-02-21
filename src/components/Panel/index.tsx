@@ -1,6 +1,6 @@
 import React from "react";
 
-// import { Container } from './styles';
+import { Container, Header, Body, Tickets } from "./styles";
 
 import Ticket from "../Ticket";
 
@@ -11,13 +11,17 @@ type PanelProps = {
 
 export default function Panel({ name, tickets }: PanelProps) {
   return (
-    <div>
-      <div>
-        {name} <b>{tickets?.length}</b>
-      </div>
-      {tickets?.map(ticket => (
-        <Ticket title={ticket} key={ticket} />
-      ))}
-    </div>
+    <Container>
+      <Body>
+        <Header>
+          {name} <b>{tickets?.length}</b>
+        </Header>
+        <Tickets>
+          {tickets?.map(ticket => (
+            <Ticket title={ticket} key={ticket} />
+          ))}
+        </Tickets>
+      </Body>
+    </Container>
   );
 }
