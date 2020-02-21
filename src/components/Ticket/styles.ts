@@ -20,7 +20,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.p`
-  margin: 15px 0px 10px 10px;
+  margin: 10px;
 `;
 
 interface EpicProps {

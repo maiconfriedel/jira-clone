@@ -33,9 +33,10 @@ function App() {
         name="Em Andamento"
         tickets={[
           {
-            title: "Ticket 3",
+            title:
+              "A pesagem de fios não deve ser liberada se não houver Ordem de Produção selecionada",
             epic: {
-              title: "Épico Número Dois",
+              title: "Integração Fio Puro",
               rColor: "41",
               gColor: "132",
               bColor: "194"
