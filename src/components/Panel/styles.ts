@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Body = styled.div`
-  background: #f5f5f5;
+  background: #f6f6f6;
   margin-left: 20px;
   width: 300px;
   display: flex;
@@ -26,7 +26,7 @@ export const Header = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  cursor: grabbing;
+  cursor: grab;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;

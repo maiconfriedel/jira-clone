@@ -11,6 +11,12 @@ export const Container = styled.div`
   align-items: flex-start;
   flex: 1;
   font-size: 14px;
+  cursor: pointer;
+  border: 0.2px solid rgba(0, 0, 0, 0.1);
+
+  :hover {
+    background: #f1f1f1;
+  }
 `;
 
 export const Title = styled.p`
@@ -35,11 +41,11 @@ export const Responsible = styled.img`
 `;
 
 export const Effort = styled.div`
-  background: #eee;
+  background: #e3e3e3;
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  margin: 0px 3px 0px 0px;
+  margin: 0px 6px 0px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
