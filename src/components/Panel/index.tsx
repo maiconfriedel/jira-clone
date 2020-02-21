@@ -2,11 +2,13 @@ import React from "react";
 
 import { Container, Header, Body, Tickets } from "./styles";
 
+import TicketModel from "../../models/Ticket";
+
 import Ticket from "../Ticket";
 
 type PanelProps = {
   name: string;
-  tickets?: string[];
+  tickets?: TicketModel[];
 };
 
 export default function Panel({ name, tickets }: PanelProps) {
@@ -18,7 +20,11 @@ export default function Panel({ name, tickets }: PanelProps) {
         </Header>
         <Tickets>
           {tickets?.map(ticket => (
-            <Ticket title={ticket} key={ticket} />
+            <Ticket
+              key={ticket.title}
+              title={ticket.title}
+              epic={ticket.epic}
+            />
           ))}
         </Tickets>
       </Body>

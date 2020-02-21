@@ -20,7 +20,36 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.p`
-  margin: 15px 0px 15px 15px;
+  margin: 15px 0px 10px 10px;
+`;
+
+interface EpicProps {
+  r: string;
+  g: string;
+  b: string;
+}
+
+export const Epic = styled.div<EpicProps>`
+  background: rgba(
+    ${props => props.r},
+    ${props => props.g},
+    ${props => props.b},
+    0.1
+  );
+  margin: 0px 0px 0px 10px;
+  border-radius: 5px;
+  padding: 2px 5px;
+  display: inline-block;
+  max-width: 180px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  color: rgba(${props => props.r}, ${props => props.g}, ${props => props.b}, 1);
+  font-size: 11px;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 `;
 
 export const Bottom = styled.div`
@@ -37,7 +66,7 @@ export const Responsible = styled.img`
   height: 28px;
   width: 28px;
   border-radius: 14px;
-  margin: 0px 15px 0px 0px;
+  margin: 0px 10px 0px 0px;
 `;
 
 export const Effort = styled.div`

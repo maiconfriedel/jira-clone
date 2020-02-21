@@ -30,7 +30,7 @@ export const Header = styled.div`
     Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 14px;
-  color: rgba(23, 43, 77, 0.85);
+  color: rgba(23, 43, 77, 0.9);
 `;
 
 export const Tickets = styled.div`

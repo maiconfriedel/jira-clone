@@ -8,15 +8,42 @@ function App() {
     <div className="container">
       <Panel
         name="Itens Pendentes"
-        tickets={["Ticket 1", "Ticket 2", "Ticket 3"]}
+        tickets={[
+          {
+            title: "Ticket 1",
+            epic: {
+              title: "Épico Número Um",
+              rColor: "255",
+              gColor: "139",
+              bColor: "0"
+            }
+          },
+          {
+            title: "Ticket 2",
+            epic: {
+              title: "Épico Número Um",
+              rColor: "255",
+              gColor: "139",
+              bColor: "0"
+            }
+          }
+        ]}
       />
       <Panel
         name="Em Andamento"
         tickets={[
-          "Botão para atualizar lista de ordens de produção no Kyly Pesagem de Fios"
+          {
+            title: "Ticket 3",
+            epic: {
+              title: "Épico Número Dois",
+              rColor: "41",
+              gColor: "132",
+              bColor: "194"
+            }
+          }
         ]}
       />
-      <Panel name="Itens Finalizados" tickets={["Ticket 1", "Ticket 2"]} />
+      <Panel name="Itens Finalizados" />
     </div>
   );
 }
