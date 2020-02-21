@@ -16,8 +16,7 @@ export const Body = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border-radius: 10px;
-  height: 100vh;
+  border-radius: 6px;
 `;
 
 export const Header = styled.div`
@@ -39,4 +38,5 @@ export const Tickets = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 `;
