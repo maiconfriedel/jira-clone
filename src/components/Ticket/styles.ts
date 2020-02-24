@@ -24,9 +24,9 @@ export const Title = styled.p`
 `;
 
 interface EpicProps {
-  r: string;
-  g: string;
-  b: string;
+  r?: string;
+  g?: string;
+  b?: string;
 }
 
 export const Epic = styled.div<EpicProps>`

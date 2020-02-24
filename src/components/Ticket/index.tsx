@@ -6,15 +6,15 @@ import EpicModel from "../../models/Epic";
 
 type TicketProps = {
   title: string;
-  epic: EpicModel;
+  epic?: EpicModel;
 };
 
 export default function Ticket({ title, epic }: TicketProps) {
   return (
     <Container>
       <Title>{title}</Title>
-      <Epic r={epic.rColor} g={epic.gColor} b={epic.bColor}>
-        {epic.title}
+      <Epic r={epic?.rColor} g={epic?.gColor} b={epic?.bColor}>
+        {epic?.title}
       </Epic>
       <Bottom>
         <Effort>5</Effort>

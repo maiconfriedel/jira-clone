@@ -40,3 +40,19 @@ export const Tickets = styled.div`
   align-items: center;
   margin-bottom: 20px;
 `;
+
+export const AddTicket = styled.button`
+  width: 280px;
+  height: 30px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background: #eee;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 5px;
+  outline: none;
+  :hover {
+    background: #ddd;
+    border: 1px solid #ccc;
+  }
+`;
