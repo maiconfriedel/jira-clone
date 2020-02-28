@@ -22,5 +22,8 @@ jobs:
     - name: Yarn CLI
       uses: CultureHQ/actions-yarn@v1.0.1
     
+    - name: Install Dependencies
+      run: yarn 
+    
     - name: Build
       run: yarn build # run's the build script in package.json
