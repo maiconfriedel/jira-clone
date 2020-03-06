@@ -21,6 +21,8 @@ export const Container = styled.div`
 
 export const Title = styled.p`
   margin: 15px 10px 10px 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 `;
 
 interface EpicProps {
@@ -79,4 +81,6 @@ export const Effort = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 `;
