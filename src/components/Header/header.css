@@ -1,0 +1,122 @@
+header {
+  background-color: rgb(64, 67, 71);
+  display: flex;
+  padding: 8px 15px;
+  align-items: center;
+}
+
+.menu {
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu:hover {
+  background-color: #666;
+  cursor: pointer;
+}
+
+.logo {
+  padding: 5px;
+  border-radius: 3px;
+  height: 40px;
+}
+
+.logo:hover {
+  background-color: #666;
+  cursor: pointer;
+}
+
+.menu-options {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-option {
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 5px;
+  border-radius: 3px;
+  margin: 0 3px;
+}
+
+.menu-option:hover {
+  cursor: pointer;
+  background-color: #666;
+}
+
+.arrow-down {
+  margin-left: 2px;
+}
+
+.selected {
+  background-color: #787878;
+}
+
+.user-avatar {
+  height: 25px;
+  border-radius: 15px;
+}
+
+.right-items {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-plus {
+  display: none;
+  background: #555;
+}
+
+.right-menu {
+  margin-right: 5px;
+}
+
+@media (max-width: 975px) {
+  .menu-apps {
+    display: none;
+  }
+  .menu-plus {
+    display: flex;
+  }
+}
+
+@media (max-width: 945px) {
+  .menu-people {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .menu-control-panel {
+    display: none;
+  }
+}
+
+@media (max-width: 710px) {
+  .menu-filters {
+    display: none;
+  }
+}
+
+@media (max-width: 635px) {
+  .menu-projects {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .menu-your-work {
+    display: none;
+  }
+}
