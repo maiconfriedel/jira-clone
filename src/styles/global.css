@@ -7,5 +7,25 @@
 
 body {
   font-family: sans-serif;
-  background-color: #f9f9f9;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sprint-data {
+  padding: 10px 0px 0px 20px;
+}
+
+.panels {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
