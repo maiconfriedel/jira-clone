@@ -18,14 +18,14 @@ body {
 
 .sprint-data {
   padding: 10px 0px 0px 20px;
+  font-size: 13px;
 }
 
 .panels {
-  padding: 0 15px;
+  padding: 0 10px;
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
   margin-top: 25px;
-  margin-bottom: 50px;
 }

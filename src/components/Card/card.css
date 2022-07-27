@@ -2,10 +2,45 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
   border-radius: 5%;
+  cursor: move;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-epic {
+  background-color: dodgerblue;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 11px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.card-data {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+}
+
+.card-story-points {
+  background-color: #e1e1e1;
+  padding: 3px 6px;
+  border-radius: 40%;
+}
+
+.card-id {
+  color: #5e6c84;
 }

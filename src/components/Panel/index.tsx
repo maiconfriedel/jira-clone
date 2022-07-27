@@ -15,7 +15,15 @@ export const Panel: React.FC<PanelProps> = ({ title, cards }) => {
         <h1 className="title">{title}</h1>
       </div>
       {cards?.map((card) => {
-        return <Card title={card} key={card} />;
+        return (
+          <Card
+            title={card}
+            id="GK-001"
+            epic="Épico 1"
+            storyPoints={13}
+            key={card}
+          />
+        );
       })}
     </div>
   );
